@@ -1,6 +1,6 @@
 {
- "last_completed": "1.1.A-estetica",
- "next": "1.1.B-paleta",
+ "last_completed": "1.1.B-paleta",
+ "next": "1.1.C-tipografia",
  "captured": {
   "logo": "se mantiene tal cual (opción a): serif caligráfica negra + hoja verde oliva + fondo crema con ramas verde claro",
   "paleta_observada": [
@@ -24,7 +24,8 @@
    "tinta": "#1E1F1A",
    "acento_tierra_colorada": "#A8532B",
    "contrastes": "salvia/blanco 2.85 (no apto texto chico); monte/blanco 7.67; tierra/blanco 5.33; tinta/crema 15.64"
-  }
+  },
+  "paleta_validada": true
  },
- "timestamp": "2026-10-01T19:29:53.838410Z"
+ "timestamp": "2026-10-01T19:33:03.254482Z"
 }
