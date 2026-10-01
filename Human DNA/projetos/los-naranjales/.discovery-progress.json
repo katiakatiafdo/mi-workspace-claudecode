@@ -14,7 +14,17 @@
   "nota": "sin naranja en la marca; DNI previo con naranja descartado",
   "fuentes": "15 posts IG vía Meta + 16 imágenes únicas + historial Meta Ads + panel Facebook",
   "estetica": "Principal: naturaleza documental (fotos reales del lugar, luz natural). Capa obligatoria de datos en cada pieza (cuota, sin entrega, servicios, WhatsApp). Vida de barrio se suma con propietarios reales; prohibido stock de personas.",
-  "racional_venta": "Orden de decisión del comprador: ¿me alcanza? > ¿es real/seguro? > ¿me gusta el lugar? La cuenta solo respondía lo tercero (44 clics, 1 lead)."
+  "racional_venta": "Orden de decisión del comprador: ¿me alcanza? > ¿es real/seguro? > ¿me gusta el lugar? La cuenta solo respondía lo tercero (44 clics, 1 lead).",
+  "la_paraguaya": "Comercializadora de los lotes. Sello NO obligatorio; se usó para dar credibilidad (inmobiliaria conocida). Nunca marca principal; puede seguir como sello de respaldo en esquina, como hoy. Azul solo dentro del sello, nunca como color de marca.",
+  "paleta_propuesta": {
+   "verde_salvia": "#85A268",
+   "verde_monte": "#3E5B2C",
+   "verde_claro": "#DCECC9",
+   "crema": "#F8FAE6",
+   "tinta": "#1E1F1A",
+   "acento_tierra_colorada": "#A8532B",
+   "contrastes": "salvia/blanco 2.85 (no apto texto chico); monte/blanco 7.67; tierra/blanco 5.33; tinta/crema 15.64"
+  }
  },
- "timestamp": "2026-10-01T19:27:02.708696Z"
+ "timestamp": "2026-10-01T19:29:53.838410Z"
 }
