@@ -41,3 +41,31 @@ Imágenes y videos: **no descargados**. El dominio cdninstagram.com está bloque
 - Ver las imágenes y videos (fotografía, colores, uso del logo, textos dentro de la imagen).
 - Bio actual del perfil, número de seguidores y destacadas (el conector no las trae).
 - Leer los comentarios de los Reels #1 a #3.
+
+## Análisis visual (imágenes descargadas el 2026-10-01 vía endpoints públicos de Instagram)
+
+Archivos en `referencias/09-instagram/losnaranjalesurbanizacion/` (16 imágenes únicas, duplicados descartados) y `referencias/logo-perfil-instagram.jpg` (100×100 px, única versión del logo disponible).
+
+**Logo (foto de perfil):** "Los Naranjales" en tipografía serif caligráfica negra, "URBANIZACIÓN" en versalitas pequeñas debajo, una hoja verde oliva de línea encima. Fondo crema verdoso con ramas de hojas grandes en verde claro, recortadas en las esquinas. No hay naranja en el logo.
+
+**Paleta observada (extracción por cuantización):**
+- Verde salvia / oliva `#85A268` (bloques de texto, hojas)
+- Verde claro `#DCECC9` y `#CACFA2` (fondos, ramas decorativas)
+- Crema `#FBFFDE` (fondo del logo)
+- Blanco `#FEFEFE`
+- Negro del logotipo
+- Cielo azul intenso y verdes de follaje en todas las fotos (color de la naturaleza, no de la marca)
+- Intruso: azul institucional del sello "LA PARAGUAYA Inmobiliaria S.A." en las esquinas (#04, #13, #15)
+
+**Tipografía en piezas:** sans geométrica en mayúsculas espaciadas ("VENI A", "LOTES", "NUEVOS") combinada con sans bold grande ("Conocer", "En venta", "Terrenos"). En #06 sans condensada blanca "INVIERTE". El logo usa otra familia (serif caligráfica). Tres o cuatro estilos distintos sin sistema.
+
+**Fotografía:**
+- 13 de 16 imágenes son fotos reales del lugar con celular: árboles altos, palmeras, caminos de tierra roja, cielo azul, contraluz con sol en el encuadre (#06, #08, #11, #13, #15). Luz de mediodía dura. Encuadre en ángulo bajo mirando hacia las copas.
+- El portón de entrada con letrero "URBANIZACIÓN Los Naranjales" aparece en #04, #05 y #07; es el único elemento construido propio.
+- Flores rojas (salvia) en #10.
+- Una sola foto con personas: silueta de familia a contraluz (#09, "TU HOGAR EN ATYRA"), claramente de banco de imágenes.
+- Ninguna foto de lotes medidos, plano, casas construidas, vecinos, propietarios, servicios (postes, medidores, caños) ni del entorno de Atyrá.
+
+**Textos dentro de la imagen:** "INVIERTE / Lotes en venta / ATYRA", "VENI A Conocer", "TU HOGAR EN ATYRA", "LOTES En venta En Atyra", "NUEVOS Terrenos En Atyra". "Atyrá" aparece siempre sin tilde y "Vení" sin tilde.
+
+**Reels (#01–#03):** recorridos en video por la vegetación (fotogramas de árboles contra el cielo). Sin texto en pantalla visible en el fotograma.
