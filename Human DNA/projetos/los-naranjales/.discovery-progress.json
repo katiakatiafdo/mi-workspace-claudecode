@@ -1,1 +1,20 @@
-{"last_completed": "1.1.D-logo", "next": "1.1.A-estetica", "captured": {"logo": "se mantiene tal cual (opción a): serif caligráfica negra + hoja verde oliva + fondo crema con ramas verde claro", "paleta_observada": ["#85A268", "#DCECC9", "#CACFA2", "#FBFFDE", "#FEFEFE", "negro logotipo"], "nota": "sin naranja en la marca; DNI previo con naranja descartado", "fuentes": "15 posts IG vía Meta + 16 imágenes únicas + historial Meta Ads + panel Facebook"}, "timestamp": "2026-10-01T19:14:38Z"}
+{
+ "last_completed": "1.1.A-estetica",
+ "next": "1.1.B-paleta",
+ "captured": {
+  "logo": "se mantiene tal cual (opción a): serif caligráfica negra + hoja verde oliva + fondo crema con ramas verde claro",
+  "paleta_observada": [
+   "#85A268",
+   "#DCECC9",
+   "#CACFA2",
+   "#FBFFDE",
+   "#FEFEFE",
+   "negro logotipo"
+  ],
+  "nota": "sin naranja en la marca; DNI previo con naranja descartado",
+  "fuentes": "15 posts IG vía Meta + 16 imágenes únicas + historial Meta Ads + panel Facebook",
+  "estetica": "Principal: naturaleza documental (fotos reales del lugar, luz natural). Capa obligatoria de datos en cada pieza (cuota, sin entrega, servicios, WhatsApp). Vida de barrio se suma con propietarios reales; prohibido stock de personas.",
+  "racional_venta": "Orden de decisión del comprador: ¿me alcanza? > ¿es real/seguro? > ¿me gusta el lugar? La cuenta solo respondía lo tercero (44 clics, 1 lead)."
+ },
+ "timestamp": "2026-10-01T19:27:02.708696Z"
+}
