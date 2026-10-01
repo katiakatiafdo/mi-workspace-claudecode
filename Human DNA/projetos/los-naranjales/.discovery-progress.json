@@ -1,6 +1,6 @@
 {
- "last_completed": "1.1.D-logo",
- "next": "1.1.G-fotografia-produccion",
+ "last_completed": "1.1.G-produccion",
+ "next": "1.1.G-analisis-fotos-originales",
  "captured": {
   "logo": "se mantiene tal cual (opción a): serif caligráfica negra + hoja verde oliva + fondo crema con ramas verde claro",
   "paleta_observada": [
@@ -45,7 +45,8 @@
    "contrastes": "oliva/blanco 2.67 solo texto grande; negro/oliva 7.88; oliva oscuro/crema 7.44; tierra/crema 5.21; tierra/oliva 2.0 nunca juntos"
   },
   "paleta_corregida_validada": true,
-  "iconografia_grid": "propuesta automática: íconos de línea con terminación redondeada derivados de la hoja del logo; grid 8px; formatos 1080x1350, 1080x1920, 1080x1080 con safezones"
+  "iconografia_grid": "propuesta automática: íconos de línea con terminación redondeada derivados de la hoja del logo; grid 8px; formatos 1080x1350, 1080x1920, 1080x1080 con safezones",
+  "produccion_foto": "La propietaria saca las fotos con el celular, no es profesional. Reglas de foto deben ser simples y ejecutables con celular."
  },
- "timestamp": "2026-10-01T19:43:04.810474Z"
+ "timestamp": "2026-10-01T20:09:05.376193Z"
 }
