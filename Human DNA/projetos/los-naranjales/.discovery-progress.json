@@ -31,7 +31,19 @@
    "texto_y_datos": "Nunito Sans (Google Fonts); precios en Nunito Sans negrita",
    "logo": "serif caligráfica del logotipo, uso exclusivo en el nombre",
    "motivo": "diferenciarse de loteamientos que usan Montserrat; conversa con el logo clásico; números legibles"
+  },
+  "logo_archivos": "2 PNG 500x500: logo-fondo-crema.png y logo-fondo-verde.png. Sin vectorial, sin transparente, sin versión mono, sin hoja aislada.",
+  "paleta_corregida_desde_logo": {
+   "verde_oliva_logo": "#95A800",
+   "verde_oliva_oscuro": "#4A5A00",
+   "lima_claro_ramas": "#D9E193",
+   "lima_palido": "#F2FE93",
+   "crema_logo": "#FCFFDE",
+   "tinta": "#000000/#1E1F1A",
+   "tierra_colorada": "#A8532B",
+   "nota": "salvia #85A268 venía de posts, no del logo; reemplazada por oliva oficial pendiente validación",
+   "contrastes": "oliva/blanco 2.67 solo texto grande; negro/oliva 7.88; oliva oscuro/crema 7.44; tierra/crema 5.21; tierra/oliva 2.0 nunca juntos"
   }
  },
- "timestamp": "2026-10-01T19:37:05.990890Z"
+ "timestamp": "2026-10-01T19:42:22.831089Z"
 }
