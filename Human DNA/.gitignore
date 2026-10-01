@@ -1,0 +1,14 @@
+# Lixo de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ambientes locais criados automaticamente pelos scripts
+.venv-pdf/
+.venv-instagram/
+__pycache__/
+*.pyc
+
+# Sessao de login do coletor de Instagram (dado pessoal, nunca compartilhar)
+*.session
+session-*

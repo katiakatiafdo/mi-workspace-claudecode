@@ -1,0 +1,317 @@
+<title>DNI de marca Los Naranjales</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: una ficha de identidad (tipo cédula) como portada; debajo, secciones de manual de marca en una columna con grillas que se apilan en móvil. */
+:root {
+  --bg: #F6F8F2;          /* blanco hoja, sesgo verde */
+  --surface: #FFFFFF;
+  --fg: #1C2A1F;          /* verde monte casi negro */
+  --muted: #5B6B5E;
+  --line: #D9E2D3;
+  --accent: #E8730C;      /* naranja maduro */
+  --accent-ink: #B4560A;  /* naranja para texto sobre claro */
+  --leaf: #2F6B3A;        /* verde hoja */
+  --leaf-soft: #E4EFE0;
+  --zest: #F7B733;        /* cáscara / sol */
+  --card-bg: #2F6B3A;
+  --card-fg: #FFFFFF;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111A13; --surface: #18241A; --fg: #E8EFE4; --muted: #9DB0A0; --line: #2A3A2D;
+    --accent: #F28A2E; --accent-ink: #F5A04F; --leaf: #6FB57C; --leaf-soft: #1E2F21; --zest: #F7C254;
+    --card-bg: #1F4A28; --card-fg: #F3F7EF; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111A13; --surface: #18241A; --fg: #E8EFE4; --muted: #9DB0A0; --line: #2A3A2D;
+  --accent: #F28A2E; --accent-ink: #F5A04F; --leaf: #6FB57C; --leaf-soft: #1E2F21; --zest: #F7C254;
+  --card-bg: #1F4A28; --card-fg: #F3F7EF; color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: grid; gap: 64px; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 1.1rem; font-weight: 700; }
+p { margin: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-ink); }
+.lede { color: var(--muted); max-width: 62ch; }
+section { display: grid; gap: 24px; }
+.sec-head { display: grid; gap: 8px; }
+
+/* ---------- Portada: la cédula ---------- */
+.intro { display: grid; gap: 20px; }
+.intro h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 800; letter-spacing: -0.02em; }
+.intro h1 span { color: var(--accent); }
+.idcard {
+  background: var(--card-bg); color: var(--card-fg); border-radius: 18px; padding: 24px;
+  display: grid; grid-template-columns: 160px 1fr; gap: 24px; position: relative; overflow: hidden;
+  box-shadow: 0 20px 40px -24px rgba(20, 40, 20, 0.6);
+}
+.idcard::after { /* guilloché suave tipo documento */
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.08;
+  background: repeating-radial-gradient(circle at 85% 20%, transparent 0 10px, currentColor 10px 11px);
+}
+.idcard__top { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.85; position: relative; z-index: 1; }
+.idcard__photo { aspect-ratio: 3 / 4; max-width: 100%; border-radius: 10px; background: var(--zest); display: grid; place-items: center; position: relative; z-index: 1; }
+.idcard__photo svg { width: 78%; height: auto; }
+.idcard__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 20px; position: relative; z-index: 1; min-width: 0; }
+.f { min-width: 0; }
+.f dt { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7; }
+.f dd { margin: 2px 0 0; font-weight: 600; font-size: 0.98rem; line-height: 1.35; }
+.f--wide { grid-column: 1 / -1; }
+.f--name dd { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; }
+.mrz { grid-column: 1 / -1; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; word-break: break-all; opacity: 0.75; border-top: 1px dashed currentColor; padding-top: 12px; position: relative; z-index: 1; }
+
+.note { background: var(--leaf-soft); border-radius: 12px; padding: 14px 16px; font-size: 0.9rem; color: var(--fg); }
+.note strong { color: var(--leaf); }
+
+/* ---------- Bloques ---------- */
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid > * { min-width: 0; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 8px; align-content: start; }
+.panel p { color: var(--muted); }
+.statement { font-family: var(--font-display); font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 700; line-height: 1.3; max-width: 30ch; }
+.statement em { font-style: normal; color: var(--accent-ink); }
+
+.values { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.value { display: grid; grid-template-columns: minmax(140px, 220px) 1fr; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); }
+.value h3 { color: var(--leaf); }
+.value p { color: var(--muted); }
+
+.isnt { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.isnt ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+.isnt .yes h3 { color: var(--leaf); }
+.isnt .no h3 { color: var(--accent-ink); }
+
+.persona .tag { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-ink); letter-spacing: 0.08em; text-transform: uppercase; }
+
+.voice { display: grid; gap: 12px; }
+.say { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.say > div { border-radius: 12px; padding: 14px 16px; font-size: 0.95rem; }
+.say .ok { background: var(--leaf-soft); }
+.say .ko { background: var(--surface); border: 1px dashed var(--line); color: var(--muted); text-decoration: line-through; text-decoration-color: var(--accent); }
+.say small { display: block; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; margin-bottom: 4px; color: var(--muted); }
+
+.swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.sw { border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.sw__chip { height: 84px; }
+.sw__meta { padding: 10px 12px; display: grid; gap: 2px; }
+.sw__meta b { font-size: 0.92rem; }
+.sw__meta code { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+.sw__meta span { font-size: 0.82rem; color: var(--muted); }
+
+.type-spec { display: grid; gap: 12px; }
+.type-row { display: grid; grid-template-columns: 160px 1fr; gap: 16px; align-items: baseline; padding-block: 12px; border-bottom: 1px solid var(--line); }
+.type-row .label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.type-row .sample { min-width: 0; overflow-wrap: anywhere; }
+
+.pillars { counter-reset: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: var(--font-mono); font-size: 0.82rem; padding: 6px 10px; border-radius: 999px; background: var(--leaf-soft); color: var(--leaf); }
+
+.bio { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 12px; max-width: 460px; }
+.bio__head { display: flex; gap: 14px; align-items: center; }
+.avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--card-bg); display: grid; place-items: center; flex-shrink: 0; }
+.avatar svg { width: 60%; }
+.bio__handle { font-weight: 600; }
+.bio__text { white-space: pre-line; font-size: 0.95rem; }
+.bio__actions { display: flex; gap: 8px; flex-wrap: wrap; }
+button { font: inherit; font-size: 0.85rem; font-weight: 600; border-radius: 8px; padding: 8px 14px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.sources { font-size: 0.85rem; color: var(--muted); display: grid; gap: 6px; }
+.sources a { color: var(--accent-ink); }
+
+@media (max-width: 640px) {
+  .idcard { grid-template-columns: 1fr; }
+  .idcard__photo { max-width: 140px; }
+  .idcard__fields { grid-template-columns: 1fr; }
+  .value, .type-row { grid-template-columns: 1fr; gap: 4px; }
+  .isnt, .say { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .idcard { animation: lift 600ms ease-out both; }
+  @keyframes lift { from { transform: translateY(8px); } to { transform: none; } }
+}
+</style>
+
+<div class="wrap">
+
+  <!-- ===== Portada ===== -->
+  <header class="intro">
+    <p class="eyebrow">Manual de identidad · v1 · octubre 2026</p>
+    <h1>DNI de marca <span>Los Naranjales</span></h1>
+    <p class="lede">La ficha de identidad de la urbanización: quién es, a quién le habla, cómo suena y cómo se ve. Pensada para guiar el contenido de <strong>@losnaranjalesurbanizacion</strong> en Instagram.</p>
+
+    <div class="idcard" role="group" aria-label="Cédula de identidad de la marca">
+      <div class="idcard__top"><span>República del Paraguay · Cordillera</span><span>Cédula de marca Nº 0061-ATY</span></div>
+      <div class="idcard__photo" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="56" r="32" fill="#E8730C"/><path d="M50 24 C 52 14, 62 8, 74 10 C 70 20, 60 25, 50 24 Z" fill="#2F6B3A"/><path d="M50 24 L 50 32" stroke="#1C2A1F" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="48" r="5" fill="#F7B733" opacity=".7"/></svg>
+      </div>
+      <dl class="idcard__fields">
+        <div class="f f--name f--wide"><dt>Nombre</dt><dd>Los Naranjales</dd></div>
+        <div class="f"><dt>Categoría</dt><dd>Urbanización residencial · loteamiento</dd></div>
+        <div class="f"><dt>Domicilio</dt><dd>Atyrá, Cordillera · 61 km de Asunción</dd></div>
+        <div class="f"><dt>Arquetipo</dt><dd>El Cuidador, con toque de Explorador</dd></div>
+        <div class="f"><dt>Respaldo</dt><dd>La Paraguaya Inmobiliaria S.A.</dd></div>
+        <div class="f f--wide"><dt>Señas particulares</dt><dd>Luz, agua corriente y calles pavimentadas. Posesión con la primera cuota. Hasta 130 cuotas fijas.</dd></div>
+        <div class="f f--wide"><dt>Promesa</dt><dd>Tu lugar propio en la ciudad más limpia del país.</dd></div>
+      </dl>
+      <div class="mrz" aria-hidden="true">IDPRY&lt;LOS&lt;NARANJALES&lt;&lt;ATYRA&lt;CORDILLERA&lt;&lt;&lt;&lt;&lt;&lt;<br>0061KM&lt;130CUOTAS&lt;POSESION&lt;INMEDIATA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div>
+    </div>
+
+    <p class="note"><strong>Antes de usar:</strong> Instagram no se pudo consultar directamente desde acá. Este DNI asume que la cuenta corresponde a la urbanización Los Naranjales de Atyrá (La Paraguaya Inmobiliaria). Los datos del producto salen de fuentes públicas; paleta, tono y personas son una propuesta para validar con el equipo.</p>
+  </header>
+
+  <!-- ===== Esencia ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Esencia</p><h2>Por qué existe la marca</h2></div>
+    <p class="statement">Hacer que tener <em>tierra propia</em> sea algo alcanzable, en un lugar donde da gusto vivir.</p>
+    <div class="grid">
+      <div class="panel"><h3>Propósito</h3><p>Acercar a familias paraguayas a su primer terreno, con cuotas que entran en el presupuesto y un entorno sano para crecer.</p></div>
+      <div class="panel"><h3>Misión</h3><p>Ofrecer lotes con servicios listos (luz, agua, pavimento) en Atyrá, con financiación propia, sin entrega inicial y con posesión desde la primera cuota.</p></div>
+      <div class="panel"><h3>Visión</h3><p>Ser la urbanización de referencia de la Cordillera para quienes buscan dejar el alquiler y vivir con más verde y más calma, cerca de Asunción.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Valores ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Valores</p><h2>Lo que sostiene cada mensaje</h2></div>
+    <div class="values">
+      <div class="value"><h3>Claridad</h3><p>Cuotas fijas, condiciones a la vista, sin letra chica. Si alguien pregunta el precio, se le responde.</p></div>
+      <div class="value"><h3>Accesibilidad</h3><p>Sin entrega inicial y hasta 130 cuotas. El terreno propio no es solo para unos pocos.</p></div>
+      <div class="value"><h3>Arraigo</h3><p>Orgullo por Atyrá y la Cordillera de los Altos: su limpieza, sus cerros, su gente.</p></div>
+      <div class="value"><h3>Cuidado</h3><p>Del entorno, de la comunidad y del cliente después de la venta.</p></div>
+      <div class="value"><h3>Crecimiento</h3><p>El lote como semilla: hoy un terreno, mañana la casa, después el patio con naranjos.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Personalidad ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Personalidad</p><h2>Si la marca fuera una persona</h2>
+      <p class="lede">Un vecino de Atyrá que ya hizo su casa: cálido, práctico, orgulloso de su pueblo y siempre dispuesto a explicarte cómo lo logró.</p></div>
+    <div class="isnt">
+      <div class="panel yes"><h3>Es</h3><ul><li>Cercana y amable</li><li>Clara con los números</li><li>Optimista con los pies en la tierra</li><li>Orgullosa de lo local</li><li>Natural, fresca, luminosa</li></ul></div>
+      <div class="panel no"><h3>No es</h3><ul><li>Vendedora agresiva ni de urgencias falsas</li><li>Lujosa ni exclusiva</li><li>Técnica o fría</li><li>Exagerada con promesas</li><li>Genérica de inmobiliaria</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ===== Público ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Público</p><h2>A quién le habla</h2></div>
+    <div class="grid">
+      <div class="panel persona"><span class="tag">Principal · 28–40 años</span><h3>La familia que quiere dejar de alquilar</h3><p>Pareja con hijos chicos en Gran Asunción o Cordillera. Ingreso fijo, sin ahorro grande para una entrega. Busca seguridad, escuela cerca y espacio verde.</p></div>
+      <div class="panel persona"><span class="tag">Secundario · 35–55 años</span><h3>El que invierte de a poco</h3><p>Quiere asegurar un terreno que gane valor con el auge inmobiliario de Cordillera. Le importan la ubicación sobre ruta y los servicios ya instalados.</p></div>
+      <div class="panel persona"><span class="tag">Nicho · 45+ años</span><h3>El que sueña con la casa de fin de semana</h3><p>Trabaja en Asunción y quiere un lugar tranquilo a una hora, entre cerros, para descansar o retirarse más adelante.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Propuesta de valor ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Propuesta de valor</p><h2>Razones para elegir Los Naranjales</h2></div>
+    <div class="grid">
+      <div class="panel"><h3>Entrás sin entrega</h3><p>Sin pago inicial y con posesión inmediata desde la primera cuota.</p></div>
+      <div class="panel"><h3>Cuotas que no cambian</h3><p>Financiación propia hasta en 130 cuotas fijas.</p></div>
+      <div class="panel"><h3>Listo para construir</h3><p>Energía eléctrica, agua corriente y calles totalmente pavimentadas.</p></div>
+      <div class="panel"><h3>Bien ubicado</h3><p>Sobre ruta principal, cerca de escuelas y puestos de salud, a 61 km de Asunción.</p></div>
+      <div class="panel"><h3>La ciudad más limpia</h3><p>Atyrá, reconocida como la ciudad más limpia del Paraguay y en pleno crecimiento turístico.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Voz ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Tono de voz</p><h2>Cómo suena</h2>
+      <p class="lede">Voseo paraguayo, frases cortas, números claros. Cálido sin ser meloso. Se puede sumar alguna palabra en guaraní cuando sale natural (por ejemplo, <em>“Jaha!”</em> o <em>“mba’éichapa”</em>), sin forzarlo.</p></div>
+    <div class="voice">
+      <div class="say"><div class="ok"><small>Sí</small>Tu terreno en Atyrá desde la primera cuota. Sin entrega inicial. ¿Te pasamos el plan de pagos?</div><div class="ko"><small>No</small>¡¡ÚLTIMOS LOTES!! ¡Oportunidad única que no podés dejar pasar!</div></div>
+      <div class="say"><div class="ok"><small>Sí</small>Calle pavimentada, luz y agua. Solo falta tu casa.</div><div class="ko"><small>No</small>Exclusivo desarrollo residencial premium con infraestructura de primer nivel.</div></div>
+      <div class="say"><div class="ok"><small>Sí</small>Cuota fija hasta el final. Lo que firmás hoy es lo que pagás mañana.</div><div class="ko"><small>No</small>Consultá condiciones por privado.</div></div>
+    </div>
+  </section>
+
+  <!-- ===== Identidad visual ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Identidad visual</p><h2>Paleta propuesta</h2>
+      <p class="lede">Sale del nombre: naranja maduro, hoja verde y la luz de la Cordillera. El naranja se usa para llamar la atención (precios, botones, “cuota fija”); el verde es el color de fondo de la marca.</p></div>
+    <div class="swatches">
+      <div class="sw"><div class="sw__chip" style="background:#E8730C"></div><div class="sw__meta"><b>Naranja maduro</b><code>#E8730C</code><span>Acento, llamados a la acción</span></div></div>
+      <div class="sw"><div class="sw__chip" style="background:#2F6B3A"></div><div class="sw__meta"><b>Verde hoja</b><code>#2F6B3A</code><span>Color principal, fondos</span></div></div>
+      <div class="sw"><div class="sw__chip" style="background:#F7B733"></div><div class="sw__meta"><b>Cáscara al sol</b><code>#F7B733</code><span>Detalles, íconos, resaltados</span></div></div>
+      <div class="sw"><div class="sw__chip" style="background:#1C2A1F"></div><div class="sw__meta"><b>Monte</b><code>#1C2A1F</code><span>Texto</span></div></div>
+      <div class="sw"><div class="sw__chip" style="background:#F6F8F2"></div><div class="sw__meta"><b>Blanco limpio</b><code>#F6F8F2</code><span>Fondos claros, aire</span></div></div>
+    </div>
+
+    <div class="sec-head" style="margin-top:16px"><h2>Tipografía y fotografía</h2></div>
+    <div class="type-spec">
+      <div class="type-row"><span class="label">Títulos · Bricolage Grotesque</span><span class="sample" style="font-family:var(--font-display);font-weight:800;font-size:1.8rem">Tu lugar en Atyrá</span></div>
+      <div class="type-row"><span class="label">Textos · Figtree</span><span class="sample">Lotes con luz, agua y calles pavimentadas. Hasta 130 cuotas fijas.</span></div>
+      <div class="type-row"><span class="label">Datos · IBM Plex Mono</span><span class="sample" style="font-family:var(--font-mono)">Lote 12 × 30 m · Cuota Gs. 000.000</span></div>
+    </div>
+    <div class="grid">
+      <div class="panel"><h3>Fotos que sí</h3><p>Luz natural de mañana o atardecer, cerros de fondo, calles pavimentadas reales, familias reales en el terreno, drone mostrando la ruta y el verde.</p></div>
+      <div class="panel"><h3>Fotos que no</h3><p>Bancos de imágenes con casas de otro país, renders de lujo, filtros saturados, flyers con más de dos tipografías.</p></div>
+      <div class="panel"><h3>Recurso gráfico</h3><p>El círculo naranja con hoja como sello: en esquinas de posts, como marcador de precio o como avatar.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Instagram ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Instagram</p><h2>Pilares de contenido</h2></div>
+    <div class="grid pillars">
+      <div class="panel"><h3>El producto, claro</h3><p>Plan de pagos, medidas de lote, plano, servicios. Carruseles con números grandes. ~35%</p></div>
+      <div class="panel"><h3>Vivir en Atyrá</h3><p>Cerros, ferias, artesanía en cuero, la ciudad limpia, lugares para comer. Reels cortos. ~25%</p></div>
+      <div class="panel"><h3>Historias de dueños</h3><p>Entrega de lotes, primera piedra, casa terminada. Testimonios en video. ~25%</p></div>
+      <div class="panel"><h3>Cómo se hace</h3><p>Guías simples: qué papeles necesitás, cómo empezar a construir, mitos sobre las cuotas. ~15%</p></div>
+    </div>
+
+    <h3>Hashtags base</h3>
+    <div class="chips"><span class="chip">#LosNaranjales</span><span class="chip">#Atyrá</span><span class="chip">#Cordillera</span><span class="chip">#TerrenoPropio</span><span class="chip">#LotesEnCuotas</span><span class="chip">#Paraguay</span><span class="chip">#CiudadMásLimpia</span></div>
+
+    <h3>Bio sugerida</h3>
+    <div class="bio">
+      <div class="bio__head">
+        <div class="avatar" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="56" r="32" fill="#E8730C"/><path d="M50 24 C 52 14, 62 8, 74 10 C 70 20, 60 25, 50 24 Z" fill="#F7B733"/></svg></div>
+        <div><div class="bio__handle">losnaranjalesurbanizacion</div><div style="color:var(--muted);font-size:0.9rem">Urbanización · Atyrá</div></div>
+      </div>
+      <p class="bio__text" id="bio-text">🍊 Tu terreno en Atyrá, la ciudad más limpia del país
+🏡 Luz, agua y calles pavimentadas
+💳 Sin entrega inicial · hasta 130 cuotas fijas
+📍 Cordillera · a 61 km de Asunción
+👇 Pedí tu plan de pagos</p>
+      <div class="bio__actions"><button type="button" id="copy-bio">Copiar bio</button></div>
+    </div>
+  </section>
+
+  <!-- ===== Fuentes ===== -->
+  <section>
+    <div class="sec-head"><p class="eyebrow">Fuentes</p></div>
+    <div class="sources">
+      <a href="https://www.lpi.com.py/los-naranjales/">La Paraguaya Inmobiliaria · Los Naranjales</a>
+      <a href="https://www.lanacion.com.py/negocios/2024/06/22/atyra-la-ciudad-mas-limpia-busca-convertirse-en-el-nuevo-polo-turistico-de-cordillera/">La Nación · Atyrá, nuevo polo turístico de Cordillera</a>
+      <a href="https://visitparaguay.travel/city/atyra">Visit Paraguay · Atyrá</a>
+    </div>
+  </section>
+</div>
+
+<script>
+document.getElementById('copy-bio').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('bio-text').textContent;
+  function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copiar bio'; }, 1800); }
+  function fallback() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('bio-text'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    done('Texto seleccionado');
+  }
+  try {
+    navigator.clipboard.writeText(text).then(function () { done('Copiada'); }, fallback);
+  } catch (e) { fallback(); }
+});
+</script>

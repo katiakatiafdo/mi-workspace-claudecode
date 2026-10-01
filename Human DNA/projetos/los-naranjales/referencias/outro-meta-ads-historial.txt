@@ -1,0 +1,15 @@
+Fuente: conector Meta (Facebook), leído el 2026-10-01. Solo lectura, sin cambios.
+
+Activos encontrados
+- Página de Facebook: "Los Naranjales Urbanizacion"
+- Negocio y cuenta publicitaria: "losnaranjalesurbanizacion" (activa, con método de pago, moneda PYG)
+- Instagram vinculado a la cuenta publicitaria: ninguno (no devuelto por Meta)
+
+Única campaña registrada: "COLD LOS NARANJALES"
+- Objetivo: clientes potenciales (OUTCOME_LEADS)
+- Fechas: 2025-04-01 20:06 a 2025-04-03 19:14 (UTC-3), ~47 h
+- Inversión: Gs. 50.000
+- Impresiones: 2.450 | Alcance: 1.728 cuentas | Frecuencia: 1,42
+- Clics (todos): 44 | CTR: 1,80 % | CPM: Gs. 20.408
+- Resultado: 1 cliente potencial (formulario Meta) | Costo por resultado: Gs. 50.000
+- Estado configurado: ACTIVE (pero ya terminó por fecha)
