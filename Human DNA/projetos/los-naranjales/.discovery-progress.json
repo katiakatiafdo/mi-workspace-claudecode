@@ -1,6 +1,6 @@
 {
- "last_completed": "1.1.C-tipografia",
- "next": "1.1.D-logo-archivos",
+ "last_completed": "1.1.D-logo",
+ "next": "1.1.G-fotografia-produccion",
  "captured": {
   "logo": "se mantiene tal cual (opción a): serif caligráfica negra + hoja verde oliva + fondo crema con ramas verde claro",
   "paleta_observada": [
@@ -43,7 +43,9 @@
    "tierra_colorada": "#A8532B",
    "nota": "salvia #85A268 venía de posts, no del logo; reemplazada por oliva oficial pendiente validación",
    "contrastes": "oliva/blanco 2.67 solo texto grande; negro/oliva 7.88; oliva oscuro/crema 7.44; tierra/crema 5.21; tierra/oliva 2.0 nunca juntos"
-  }
+  },
+  "paleta_corregida_validada": true,
+  "iconografia_grid": "propuesta automática: íconos de línea con terminación redondeada derivados de la hoja del logo; grid 8px; formatos 1080x1350, 1080x1920, 1080x1080 con safezones"
  },
- "timestamp": "2026-10-01T19:42:22.831089Z"
+ "timestamp": "2026-10-01T19:43:04.810474Z"
 }
