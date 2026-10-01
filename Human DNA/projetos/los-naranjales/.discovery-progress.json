@@ -1,6 +1,6 @@
 {
- "last_completed": "1.1.B-paleta",
- "next": "1.1.C-tipografia",
+ "last_completed": "1.1.C-tipografia",
+ "next": "1.1.D-logo-archivos",
  "captured": {
   "logo": "se mantiene tal cual (opción a): serif caligráfica negra + hoja verde oliva + fondo crema con ramas verde claro",
   "paleta_observada": [
@@ -25,7 +25,13 @@
    "acento_tierra_colorada": "#A8532B",
    "contrastes": "salvia/blanco 2.85 (no apto texto chico); monte/blanco 7.67; tierra/blanco 5.33; tinta/crema 15.64"
   },
-  "paleta_validada": true
+  "paleta_validada": true,
+  "tipografia": {
+   "titulos": "Lora (Google Fonts)",
+   "texto_y_datos": "Nunito Sans (Google Fonts); precios en Nunito Sans negrita",
+   "logo": "serif caligráfica del logotipo, uso exclusivo en el nombre",
+   "motivo": "diferenciarse de loteamientos que usan Montserrat; conversa con el logo clásico; números legibles"
+  }
  },
- "timestamp": "2026-10-01T19:33:03.254482Z"
+ "timestamp": "2026-10-01T19:37:05.990890Z"
 }
