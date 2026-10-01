@@ -1,0 +1,8 @@
+# Dependências criadas sob demanda pelas skills Human
+.claude/skills/**/.venv-pdf/
+.claude/skills/**/node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+# Saídas das execuções das skills
+human-output/
